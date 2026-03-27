@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Internal CSS: 태그 지정해서 css 전체 관리용, 꼭 head에서/
+html안에 같이 포함되어 관리하는 CSS  -->
+<style>
+.centered {
+    text-align: center;
+}
+.left {
+    text-align: end;
+}
+header {
+    color: violet;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+main {
+    color:darkblue;
+    font-size: medium;
+}
+
+footer {
+    color:green;
+font-size: x-small;
+}
+
+</style>
+
+<body>
+    <!-- inline CSS 태그 안에 같이 관리되고 있는 CSS -->
+    <div class="centered">
+        <!-- class 값 지정 후 따로 관리 head에서 .centered 로 태그관리 -->
+    <header>
+        Jaemi Kim
+    </header>
+    <!-- "font-size: x-large; property: value -->
+    <!-- text-align: center; 가운데 정렬 -->
+    <!-- style="text-align: end;" 오른쪽 정렬, star: 왼쪽 정렬 -->
+    <!-- <p></p> p는 기본 공백이 포함 되어 있다 -->
+    <main>
+    anywaysoul92@gmail.com
+
+    </main>
+
+    <main>
+    Nurse
+    </main>
+
+    <footer>
+    Copyright &#169; Jaemi Kim
+    </footer>
+
+    </div>
+
+<div class="left">
+ mobile: 
+
+</div>
+</body>
+</html>
