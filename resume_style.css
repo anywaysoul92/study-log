@@ -1,0 +1,67 @@
+.centered {
+    text-align: center;
+}
+.left {
+    text-align: end;
+}
+header {
+    color: violet;
+    background-color: rgb(243, 239, 247);
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top:  20px;
+    margin-bottom: 5px;
+
+    /* 폰트의 스타일 바꾸기 */
+    /* 하지만 폰트의 종류에 따라 보여줄 수 없는 폰트도 있을 수 있기때문에 */
+    /* 대체 폰트입력해서 연결해줄 수 있다. */
+font-family: 'times new roman', times, serif;
+}
+
+main {
+    color:rgb(5, 5, 53);
+    background-color: rgb(232, 217, 197);
+    font-size: medium;
+    margin-top: 1rem;
+}
+
+footer {
+    color:black;
+    font-weight: bold;
+    background-color: darkkhaki;
+font-size: x-small;
+/* 마진을 통해서 태그들의 위치를 조정할 수 있다.  */
+/* margin-top, margin-buttom 등 */
+margin-top: 85vh;
+margin-bottom: 50px;
+}
+.github-link {
+    color: gray;
+   
+    text-decoration: none; /* (밑줄제거) */
+
+
+}
+
+/* 마우스 커서를 옮겼을 때 밑줄이 생기도록 설정
+( 링크라는 표시를 강조하기 위해) */
+.github-link:hover{
+
+    text-decoration: underline;
+
+}
+.korean-link{
+position: fixed;
+top: 10px;
+right: 10px;
+}
+/* 위치 고정됨  */
+
+.contact-row {
+display: flex;
+flex-direction: row-reverse;
+justify-content: center;
+gap: 10px;
+font-size: small;
+}

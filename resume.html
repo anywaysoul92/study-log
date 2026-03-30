@@ -5,47 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<!-- Internal CSS: 태그 지정해서 css 전체 관리용, 꼭 head에서/
-html안에 같이 포함되어 관리하는 CSS  -->
+<!-- Internal CSS -->
+
+<!-- 태그 지정해서 css 전체 관리용, 꼭 head에서 -->
+<!-- html안에 같이 포함되어 관리하는 CSS -->
 <style>
-.centered {
-    text-align: center;
-}
-.left {
-    text-align: end;
-}
-header {
-    color: violet;
-    text-align: center;
-    font-size: x-large;
-    font-weight: bold;
-}
-
-main {
-    color:darkblue;
-    font-size: medium;
-}
-
-footer {
-    color:green;
-font-size: x-small;
-}
-
+ /* 스타일 외부로 옮기기 위해서 잘라냄 */
 </style>
+
+<!-- External CSS -->
+<link rel="stylesheet" href="resume_style.css">
+<!-- fontawesome 으로 아이콘 연결 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
 
 <body>
     <!-- inline CSS 태그 안에 같이 관리되고 있는 CSS -->
     <div class="centered">
         <!-- class 값 지정 후 따로 관리 head에서 .centered 로 태그관리 -->
     <header>
-        Jaemi Kim
+        Jamie Kim
     </header>
+     <a class="korean-link" href=""> 한글 이력서 </a>
     <!-- "font-size: x-large; property: value -->
     <!-- text-align: center; 가운데 정렬 -->
     <!-- style="text-align: end;" 오른쪽 정렬, star: 왼쪽 정렬 -->
     <!-- <p></p> p는 기본 공백이 포함 되어 있다 -->
-    <main>
-    anywaysoul92@gmail.com
+
+       <!-- 연락처 -->
+    <div class="contact-row">
+<span>  anywaysoul92@gmail.com </span>
+<span>|</span>
+<span>010-1234-5678</span>
+<span>|</span>    
+
+    <!-- 앵커로 github 연결을 해주었다 -->
+     <a class="github-link"  href="https://github.com/anywaysoul92/study-log.git">
+       <!-- i 태그로 아이콘 연결해줌 --> <i class="fa-brands fa-github"></i> Github
+    </div>
+    
+    </a>
+
+     <main>
+  
 
     </main>
 

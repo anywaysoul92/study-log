@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+.container{
+
+    display: flex;
+}
+
+.box{
+flex: 1;
+background-color: aquamarine;
+border: 1px solid black;
+}
+
+/* media_query */
+@media (max-width: 300px)  {
+    /* max-width 전체 화면이 299px 일때 까지는 그 전 모양을 그대로 유지,
+     아래의 300px의 특정 조건이 만족되면 아래의 모양으로 바뀜 */
+    .container { 
+        flex-direction:column;
+    }
+    .box {
+        background-color: blueviolet;
+    }
+}
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+<div class="box">A</div>
+<div class="box">B</div>
+<div class="box">C</div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+span{
+background-color: aqua;
+}
+div{
+background-color: aquamarine;
+}
+a{
+background-color: yellow;
+}
+
+</style>
+
+<body>
+    <!-- inline -->
+<a href="">visit Google</a>
+<a href="">visit Naver</a>
+<!-- 하지만 inline은 너비를 조절 할 수 없음 -->
+
+<hr>
+
+<!-- Block-level -->
+<div style="width: 100px;">Visit Google</div>
+<!-- 너비 조정 가능 -->
+<div>Visit Naver</div>
+
+<hr>
+
+<!-- Inline 이 들어가면 한 줄로 나열되는 모습을 볼 수 있다  -->
+<span>inline 1</span>
+<span>inline 2</span>
+<span style="display: block;">inline3</span>
+<div style="display: inline">block</div>
+<!-- 위의 예시처럼 기본 속성과 반대로 
+ style="display: "로 나열을 바꿀 수 있음 -->
+<span>inline4</span>
+<div>Block</div>
+<!-- Block 은 줄바꿈되어 나타나는 것 을 볼 수 있다-->
+</body>
+</html>

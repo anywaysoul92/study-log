@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.container{
+    display: flex;
+    /* flex로 만드는 순간 content의 영역만큼 줄어든다  */
+    flex-direction:column;
+    /* gap: 10px; */
+  justify-content: space-between; 
+    /* justify-content 주축 방향 결정 */
+    /* 가운데 정렬 *, start 오른쪽, end 왼쪽, 
+    space-between 양쪽 방향으로 블럭사이 공백 넣음*/
+    background-color: aqua;
+    /* align-items: ; */
+    /* align-items 교차 축 정렬 */ 
+    height: 90vh;
+    
+}
+
+.item{
+    background-color: aquamarine;
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+
+}
+
+</style>
+
+
+</head>
+<body>
+
+<div class="container">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+</div>
+ 
+
+
+</body>
+</html>
