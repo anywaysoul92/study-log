@@ -1,5 +1,9 @@
-.centered {
+.contents {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /*min-height: 100vh;부모 태그가 (최소) 화면 세로길이의 100%차지 */
 }
 .left {
     text-align: end;
@@ -24,6 +28,9 @@ main {
     background-color: rgb(232, 217, 197);
     font-size: medium;
     margin-top: 1rem;
+    flex: 1;
+    /* flex: 1; 남은 공간만큼 영역을 다 차지해라
+    즉, main 태그가 남은공간 전부를 차지한다.   */
 }
 
 footer {
@@ -33,8 +40,8 @@ footer {
 font-size: x-small;
 /* 마진을 통해서 태그들의 위치를 조정할 수 있다.  */
 /* margin-top, margin-buttom 등 */
-margin-top: 85vh;
-margin-bottom: 50px;
+/* margin-top: 85vh; */
+margin-bottom: 1.2rem;
 }
 .github-link {
     color: gray;

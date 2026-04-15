@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .container {
+    display: grid;
+    padding: 10%;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas: 
+    /* 차지하는 영역을 지정한 별칭으로 넣어줌 */
+                "img1 img3 img3"
+                "img1 img4 img6"
+                "img2 img2 img6"
+                "img5 img5 img5";
+}
+
+img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+/* object-fit: cover사진의 비율을 살리면서 배치할 수 있다.  */
+border-radius: 10px;
+/* border-radius: 사진의 끝을 둥글게 만들어줌  */
+}
+
+.container:hover .item img:not(:hover) {
+    filter: grayscale(1);
+    opacity: 0.5;
+} 
+/* 마우스 안올라가는거 filter회색으로 바꾸고 투명도(opacity) 넣기  */
+
+.img1 {
+            grid-area: img1;
+        }
+.img2 {
+            grid-area: img2;
+        }
+.img3 {
+            grid-area: img3;
+        }
+.img4 {
+            grid-area: img4;
+        }
+.img5 {
+            grid-area: img5;
+        }
+.img6 {
+            grid-area: img6;
+        }
+</style>
+
+</head>
+<body>
+    
+    <div class="container">
+<!-- .item.img$*6>img-->
+ <div class="item img1"><img src="https://plus.unsplash.com/premium_photo-1690571200236-0f9098fc6ca9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JUVDJTlBJUIwJUVDJUEzJUJDfGVufDB8fDB8fHww" alt="img1"></div>
+ <div class="item img2"><img src="https://images.unsplash.com/photo-1464802686167-b939a6910659?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8JUVDJTlBJUIwJUVDJUEzJUJDfGVufDB8fDB8fHww" alt="img2"></div>
+ <div class="item img3"><img src="https://images.unsplash.com/photo-1505506874110-6a7a69069a08?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8JUVDJTlBJUIwJUVDJUEzJUJDfGVufDB8fDB8fHww" alt="img3"></div>
+ <div class="item img4"><img src="https://images.unsplash.com/photo-1502318217862-aa4e294ba657?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fCVFQyU5QSVCMCVFQyVBMyVCQ3xlbnwwfHwwfHx8MA%3D%3D" alt="img4"></div>
+ <div class="item img5"><img src="https://plus.unsplash.com/premium_photo-1677916317230-d9b78d675264?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fCVFQyU5QSVCMCVFQyVBMyVCQ3xlbnwwfHwwfHx8MA%3D%3D" alt="img5"></div>
+ <div class="item img6"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fCVFQyU5QSVCMCVFQyVBMyVCQ3xlbnwwfHwwfHx8MA%3D%3D" alt="img6"></div>
+    </div>
+</body>
+</html>
