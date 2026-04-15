@@ -11,7 +11,7 @@
 
 ---
 
-## 📂 Directory Structure
+## 📂 Directory Structure (주요 파일 설명)
 
 | File | Focus Area | Description |
 | :--- | :--- | :--- |
@@ -21,6 +21,12 @@
 | `position.html` | **Position** | Relative, Absolute, Fixed, Sticky의 기준점 및 스택 순서 실험 |
 | `media_query.html` | **Responsive** | 브레이크포인트를 활용한 디바이스별 반응형 레이아웃 구현 |
 | `resume.html` | **Project** | 웹 이력서 구현 |
+| `todo.html` | **Project** | todo list 구현 |
+| `timer.html` | **Project** | 카운트다운 구현 |
+
+.. 등등 
+
+기본 html CSS javascript 학습 및 실습 코드
 
 ---
 
@@ -28,7 +34,8 @@
 
 ### **레이아웃 유지보수 및 리스크 관리**
 * **유연한 단위 설계**: `px` 기반의 고정 너비는 다양한 해상도에서 레이아웃이 깨지는 치명적 리스크가 있습니다. 이를 방지하기 위해 `flex`의 `calc()`나 `%` 단위를 혼용하여 유연성을 확보했습니다.
-* **시맨틱 마크업의 중요성**: `<div>` 남발을 지양하고 `<header>`, `<main>`, `<section>` 등 의미 있는 태그를 사용하여 검색 엔진 최적화(SEO) 및 접근성을 고려한 마크업을 지향합니다.
+* **시맨틱 마크업의 중요성**: `<div>` 과사용을 지양하고 `<header>`, `<main>`, `<section>` 등 의미 있는 태그를 사용하여 검색 엔진 최적화(SEO) 및 접근성을 고려한 마크업을 지향합니다.
+  
 
 ---
 
